@@ -1,0 +1,91 @@
+/* General body styling */
+body {
+    background-color: #ffffff;
+    opacity: 0.7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), 
+                      radial-gradient(#444cf7 0.5px, #252222 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+}
+
+/* Container styling */
+.container {
+    margin: 20px auto;
+}
+
+/* Carousel banner styling */
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Carousel control button positions */
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* About section styling */
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.abouttext {
+    color: rgb(234, 236, 237);
+    text-align: justify;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#ffffff, #934141);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutimage {
+    width: 280px;
+    height: 350px;
+}
+
+/* Card styling */
+.card {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.skillcard {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Changed to stretch to ensure all cards have the same height */
+}
+
+/* Card text styling */
+.card-title,
+.card-text {
+    background: -webkit-linear-gradient(#354fac, #464b5c);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* List group item styling */
+.list-group-item {
+    background: -webkit-linear-gradient(#81586f, #8ca72b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Skill title styling */
+.skilltitle {
+    background-color: #B9B9BA;
+    height: 45px;
+    font-weight: bold;
+    text-align: center;
+    color: #58617b;
+}
+

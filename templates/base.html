@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock  %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="{% static "css/master.css" %}">
+</head>
+<body>
+    {% comment %} Navbar {% endcomment %}
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-body data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">N M K</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#about-me">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LogIn</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    {% comment %} Banner Section {% endcomment %}
+    <div class="container bs">
+         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static "images/one.jpg" %}" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static "images/two.jpg" %}" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static "images/three.jpg" %}" class="d-block w-100" alt="">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+           
+    </div>
+    {% comment %} About Me Section {% endcomment %}
+    <section id="about-me" class="container mt-5">
+    
+      <div class="row aboutme">
+        <div class="col-md-4">
+          <img class="aboutimage" src="{% static "images/nur.jpg" %}" alt="">
+        </div>
+        <div class="col-md-8">
+         <h1 class="abouttext">About Me</h1>
+         <p class="abouttext">Hello! I'm Nurmohammad Khan, a passionate and dedicated professional with over 3 years of experience in digital marketing, full stack development, and data science. 
+         My journey in the tech world has been a blend of creativity and analytical thinking, allowing me to craft innovative solutions and strategies. 
+         I specialize in creating data-driven marketing strategies that enhance brand visibility and engagement, excelling in SEO and social media marketing. As a proficient full stack developer, 
+         I build robust and user-friendly web applications using HTML, CSS, JavaScript, Bootstrap, jQuery, Python, Django, and SQLite. 
+         Additionally, my skills in data science with Jupyter, NumPy, pandas, Scikit-learn, and Matplotlib enable me to transform data into actionable insights, helping to make informed decisions and solve complex problems.</p>
+        </div>
+      </div>
+    
+    </section>
+    {% comment %} Skills Section {% endcomment %}
+    <section id="skills" class="container mt-5">
+    <h2 class="skilltitle">My Skills</h2>
+      <div class="row skillcard">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static "images/digitalmarketing.jpg" %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Digital Marketing</h5>
+              <p class="card-text">With over 3 years of experience, Nurmohammad Khan is a seasoned Digital Marketing Expert.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Proficient in SEO, SEM, social media marketing, and content strategy.</li>
+              <li class="list-group-item">Expert in analyzing market trends and consumer behavior to optimize campaigns.</li>
+              <li class="list-group-item">Skilled in using tools like Google Analytics, AdWords, and various social media platforms.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static "images/fullstack.jpg" %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Full Stack Development</h5>
+              <p class="card-text">With over 2 years of experience, Nurmohammad Khan is a seasoned Full Stack Developer.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Strong foundation in HTML, CSS, JavaScript, and Bootstrap for front-end development.</li>
+              <li class="list-group-item">Experienced with back-end technologies such as Python, Django, and SQLite.</li>
+              <li class="list-group-item">Adept at creating responsive and user-friendly web applications.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static "images/datascience.jpg" %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Data Science</h5>
+              <p class="card-text">With over 1 years of experience, Nurmohammad Khan is a seasoned Data Scientist.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Comprehensive knowledge of data analysis, machine learning, and statistical modeling.</li>
+              <li class="list-group-item">Proficient in using Jupyter, NumPy, pandas, Scikit-learn, and Matplotlib.</li>
+              <li class="list-group-item">Skilled in deriving insights from complex data sets to drive business decisions.</li>
+            </ul>
+          </div>
+        
+        </div>
+      </div>
+    
+    </section>
+    {% comment %} Project Section {% endcomment %}
+    <section id="project" class="container mt-5">
+    <h2 class="skilltitle">My Projects</h2>
+      <div class="row skillcard">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static "images/proers.jpg" %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Employee Reporting System</h5>
+              <p class="card-text">This innovative employee reporting system is designed to streamline work reporting and supervision. It allows employees to create, delete, and edit work reports efficiently, providing a comprehensive overview of tasks and time management.</p>
+            </div>
+        
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static "images/prosup.jpg" %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Supervisor Tracking and Monitoring</h5>
+              <p class="card-text">Supervisors can easily track work reports and monitor the time taken for each task. The system offers detailed insights into employee performance and task durations helping supervisors ensure productivity.</p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static "images/proml.jpg" %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Machine Learning-Based Time Estimates</h5>
+              <p class="card-text">The system integrates advanced machine learning algorithms to offer time estimation suggestions for tasks. This feature provides supervisors with predictive insights, enabling better planning and time management.</p>
+            </div>
+            
+          </div>
+        
+        </div>
+      </div>
+    
+    </section>
+
+    {% comment %} Contact Me Section {% endcomment %}
+    <section id="contact" class="container mt-5">
+      <h2 class="skilltitle">Contact Me</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <div class="card-body">
+                <i class="bi bi-facebook" style="font-size: 2rem;"></i>
+                <h5 class="card-title mt-2">Message Me on Facebook</h5>
+                <a href="https://www.facebook.com/nurmohammad.khan.98478672" target="_blank" class="btn btn-primary">Message on Facebook</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <div class="card-body">
+                <i class="bi bi-whatsapp" style="font-size: 2rem;"></i>
+                <h5 class="card-title mt-2">Message or Call Me on WhatsApp</h5>
+                <a href="https://wa.me/01515209259" target="_blank" class="btn btn-success">Message on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <div class="card-body">
+                <i class="bi bi-envelope" style="font-size: 2rem;"></i>
+                <h5 class="card-title mt-2">Email Me</h5>
+                <a href="mailto:nurewu007@gmail.com" class="btn btn-danger">Email Me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    {% comment %} Footer Section {% endcomment %}
+    <footer class="bg-light text-center py-2">
+      <p>&copy; 2024 NMK. All rights reserved.</p>
+    </footer>
+
+    
+
+  
+
+
+     
+      
+    
+    
+    {% block content %}
+    
+    {% endblock  %}
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
